@@ -63,7 +63,7 @@ function App() {
               handleCloseQuery={handleCloseQuery}
             />
           </div>
-          <div className='w-full my-8 border border-[1px] border-gray-600'>
+          <div className='w-3/4 my-8 border border-[1px] border-gray-600'>
             <h3 className='bg-blue-200 font-bold text-xl py-2 pl-2'>
               {query?.StyleCode} # {query?.tgl}
             </h3>

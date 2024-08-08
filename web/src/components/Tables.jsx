@@ -16,7 +16,7 @@ export default function Tables({ action, data, header, query, handleSetQuery, ha
                             >
                                 {item === 'detailSize' && <h4 className='text-center py-2'>Size</h4>}
                                 {item === 'detailSize'
-                                    ? <div className={`text-center grid px-4 py-4 w-full ${checkSize.length > 0 ? 'grid-cols-6' : 'grid-cols-11'}`}>
+                                    ? <div className={`text-center grid py-4 w-full ${checkSize.length > 0 ? 'grid-cols-6' : 'grid-cols-11'}`}>
                                         {
                                             detailSizeObj.map(x => x.SizeName)
                                                 ?.map(x =>
@@ -68,7 +68,7 @@ export default function Tables({ action, data, header, query, handleSetQuery, ha
                                 <th scope="row" className="border border border-gray-600 px-4 py-4 whitespace-nowrap">
                                     {String(item.Operator)}
                                 </th>
-                                <th className="border border border-gray-600 px-4 py-4 w-full">
+                                <th className="border border border-gray-600 w-full">
                                     <div className={`text-center grid py-4 w-full ${checkSize.length > 0 ? 'grid-cols-6' : 'grid-cols-11'}`}>
                                         {item.detailSize.map(x =>
                                             <th scope="col" className={`${x.totalOutput > 0 ? 'text-black' : 'text-red-600'} border border border-gray-600 px-4 py-3`}>
